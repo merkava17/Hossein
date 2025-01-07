@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoSSeiN</title>
+    <style>
+        /* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #533483);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+    animation: rotateProfile 4s ease-in-out forwards; /* انیمیشن یکبار اجرا شود */
+}
+
+/* انیمیشن چرخش تصویر پروفایل */
+@keyframes rotateProfile {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s ease;
+}
+
+.links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .links a {
+        padding: 8px 16px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <!-- تغییر مسیر تصویر پروفایل به لینک جدید -->
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLQy0FZ0-axsgqX-Tm2cYPrlNcn8-r-ZUkkYfvrTykAE8__3j4=s576-c-no" alt="Profile Picture">
+        </div>
+        <div class="links">
+            <!-- اضافه کردن بخش واتساپ در بالای بخش اینستاگرام -->
+            <a href="https://wa.me/989111318975" target="_blank">WhatsApp</a>
+            <!-- تغییر لینک اینستاگرام به آدرس جدید -->
+            <a href="https://www.instagram.com/hossein_hamrangi" target="_blank">Instagram</a>
+            <a href="https://t.me/ho3in1717" target="_blank">Telegram</a>
+            <!-- اضافه کردن لینک جدید با نام Web Address -->
+            <a href="https://holdingamlakkandouj.ir/" target="_blank">Web Address</a>
+        </div>
+    </div>
+</body>
+</html>
